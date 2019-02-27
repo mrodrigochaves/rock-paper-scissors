@@ -8,8 +8,6 @@
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
   </head>
   <body>
-  <button onclick='playerPlay()'>Try it</button>
-  <p id="demo">Click</p>
     <script>
       function computerPlay() {
       let getRandom = Math.floor(Math.random() * 3);
@@ -23,20 +21,6 @@
             return "Scissors";
         }
       }
-      
-      function playerPlay() {
-        let getSelect = prompt("Please select your option", "Rock, Paper or Scissors");
-        return getSelect;
-        document.getElementById("demo").innerHTML =
-    "Hello " + getSelect + "! How are you today?";
-      }
-      
-      function playRound(playerSelection, computerSelection){
-       playerSelection = playerPlay.toLowerCase();
-       computerSelection = computerPlay.toLowerCase();
-  
-      }
-      
     </script>
   </body>
 </html>
