@@ -9,18 +9,16 @@
   </head>
   <body>
     <script>
-      function computerPlay(x) {
-        if (x === 0) {
-          alert("Rock");
+      function computerPlay() {
+      let getRandom = Math.floor(Math.random() * 3);
+        if (getRandom === 0) {
+          return "Rock";
         }
-        if (x === 5) {
-          alert("Paper");
-        }
-        if (x === 2) {
-          alert("Scissors");
+        if (getRandom === 1) {
+          return "Paper";
         }
         else {
-            alert('Choose anything!');
+            return "Scissors";
         }
       }
     </script>
