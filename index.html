@@ -3,13 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Rock Paper Scissors Game</title>
+    <title>Rock Paper Scissor Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
   <body>
-  <button onclick='playerPlay()'>Try it</button>
-  <p id="demo"></p>
-    <script src='main.js'></script>
+    <header><h3>Rock, Paper or Scissor</h3></header>
+    <h4>Game Score</h4>
+    <div id="score">
+      <div>
+        <h5>player: <span>0</span></h5>
+      </div>
+      <div>
+        <h5>computer: <span>0</span></h5>
+      </div>
+    </div>
+    <div id="result">
+      <p>Result</p>
+    </div>
+    <div class="option">
+      <div id="r">
+        <img src="/assets/rock.png" alt="" />
+      </div>
+      <div id="r">
+        <img src="/assets/paper.png" alt="" />
+      </div>
+      <div id="r">
+        <img src="/assets/scissors.png" alt="" />
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
