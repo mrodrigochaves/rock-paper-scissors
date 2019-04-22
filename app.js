@@ -54,20 +54,19 @@ function game() {
   }
 
   // This return text in green color
-  console.log("%c Final Score!", "color: #00ff00");
-  console.log("%c *****************************", "color: #00ff00");
+  alert("Final Score!");
 
   // This return the winner of game based on their highest points
   if (playerScore > computerScore) {
-    console.log(
+    alert(
       `You are the winner with a score of ${playerScore} to ${computerScore}, and ${drawScore} for draw!`
     );
   } else if (playerScore < computerScore) {
-    console.log(
+    alert(
       `Computer is the winner with a score of ${computerScore} to ${playerScore}, and ${drawScore} for draw!`
     );
   } else {
-    console.log(
+    alert(
       `This is a drawn with a ${drawScore} draws, ${playerScore} for player and ${computerScore} for computer!`
     );
   }
